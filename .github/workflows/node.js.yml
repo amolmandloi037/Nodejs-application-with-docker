@@ -31,5 +31,5 @@ jobs:
     - run: npm install
     - run: docker build . --file Dockerfile --tag amol:$(date +%s)
     - run: docker images
-    - run: docker login -u amol -p akmandloi
+    - run: docker login -u amol037 -p akmandloi
     - run: docker push amol:$(date +%s)
