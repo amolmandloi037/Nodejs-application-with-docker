@@ -29,7 +29,7 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm install
-    - run: docker build . --file Dockerfile --tag amol:mandloi
+    - run: docker build . --file Dockerfile --tag amol037/amol:mandloi
     - run: docker images
     - run: docker login -u amol037 -p akmandloi
-    - run: docker push amol:mandloi
+    - run: docker push amol037/amol:mandloi
