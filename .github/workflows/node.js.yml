@@ -29,5 +29,7 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm install
-    - run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+    - run: docker build . --file Dockerfile --tag amol:$(date +%s)
     - run: docker images
+    - run: docker login -u amol -p akmandloi
+    - run: docker push amol:$(date +%s)
