@@ -1,12 +1,13 @@
 apiVersion: v1
 kind: Service
-metadata:
+metadata: 
   name: myservice
-spec:
-  type: NodePort
-  ports:
-  - port: 9005
-    targetPort: 9005
-    nodeport: 30005
-  selector:
+spec: 
+  ports: 
+    - 
+      nodePort: 30005
+      port: 9005
+      targetPort: 9005
+  selector: 
     name: myapp
+  type: NodePort
