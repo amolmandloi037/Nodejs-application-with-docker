@@ -4,10 +4,8 @@ metadata:
   name: myservice
 spec: 
   ports: 
-    - 
-      nodePort: 30005
-      port: 9005
+    - port: 9005
       targetPort: 9005
   selector: 
     name: myapp
-  type: NodePort
+  type: LoadBalancer
