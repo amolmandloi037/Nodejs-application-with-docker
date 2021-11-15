@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend
+  labels:
+    app: mywebsite
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        name: myapp
+    spec:
+      containers:
+      - name: nodejs
+        image: amol037/amol:mandloi
+  selector:
+    matchLabels:
+      name: myapp
