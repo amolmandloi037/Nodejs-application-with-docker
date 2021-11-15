@@ -55,8 +55,7 @@ jobs:
 
         # Type of Kubernetes secret. For example, docker-registry or generic
         secret-type: docker-registry
-        # Name of the secret. You can use this secret name in the Kubernetes YAML configuration file.
-        secret-name: docker-image-pull-secret
+
         
         
     - name: Deploy to Kubernetes cluster
