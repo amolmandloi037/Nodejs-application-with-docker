@@ -40,9 +40,9 @@ jobs:
         # Azure credentials i.e. output of `az ad sp create-for-rbac --sdk-auth`
         creds: ${{secrets.AZURE_CREDENTIALS}}
         # Resource Group Name
-        resource-group: # optional, default is 
+        resource-group: demo-grp
         # AKS Cluster Name
-        cluster-name: # optional, default is 
+        cluster-name: amol 
         
         
     - name: Create secret in Kubernetes cluster
